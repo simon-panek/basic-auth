@@ -26,6 +26,8 @@ router.post('/signup', async (req, res) => {
   } catch (e) { console.log(e); res.status(403).send("Error Creating User"); }
 });
 
-router.post('/signin', basicAuth);
+router.post('/signin', basicAuth, (req, res) => {
+  res.status(200).send(req.user);
+});
 
 module.exports = router;
