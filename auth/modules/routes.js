@@ -22,7 +22,7 @@ router.post('/signup', async (req, res) => {
     // console.log('3.user ', user);
     const record = await user.save(req.body);
     // console.log('4.record', record);
-    res.status(200).json(record);
+    res.status(201).json(record);
   } catch (e) { console.log(e); res.status(403).send("Error Creating User"); }
 });
 
