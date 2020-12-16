@@ -16,7 +16,7 @@
 #### `.env` requirements (where applicable)
 
 - `PORT` - 3000
-- `MONGODB_URI` - mongodb://localhost:27017/auth
+- `MONGOOSE_URI` - mongodb://localhost:27017/auth
 
 #### How to initialize/run your application (where applicable)
 
